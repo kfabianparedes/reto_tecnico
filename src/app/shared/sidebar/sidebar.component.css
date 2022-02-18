@@ -1,0 +1,86 @@
+/* sidebar contenedor */
+.contorno{
+    background: #662323;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 100vh;
+}
+li{
+    list-style:none;
+}
+/* Logo con título */
+li .titulo-logo{
+    font-family: 'Quicksand', sans-serif;
+    color: #E86060;
+    padding-top: 1.5rem;
+    padding-left: 0;
+    font-size: 2rem;
+}
+li img{
+    padding-right: 0;
+    padding-left: 2rem;
+    margin-left: 2rem;
+}
+
+.subtitulo-sidebar{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top:2rem;
+    padding-left: 2rem;
+}
+.opciones-menu{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    margin-top:0.5rem;
+    padding-left: 0.3rem;
+    
+    
+}
+.barra{
+    width: 1rem;
+    height: 20px;   
+    display: block;       
+    width: 1rem;
+    height: 20px;
+    color: #E86060;
+}
+.barra:hover{
+    display: block;       
+    width: 1rem;
+    height: 20px;
+    color: #E86060;
+}
+.opciones-menu:hover{
+    color: #E86060;
+}
+@media screen and (max-width : 1360px){
+    li .titulo-logo{
+        font-family: 'Quicksand', sans-serif;
+        color: #E86060;
+        padding-top: 1.3rem;
+        font-size: 1.7rem;
+        padding-left: 0;
+        
+    }
+    li img{
+        padding-right: 0rem;
+        margin-left: 1rem;
+    }
+}
+@media screen and (max-width : 768px){
+    li .titulo-logo{
+        font-family: 'Quicksand', sans-serif;
+        color: #E86060;
+        padding-left: 1rem;
+        padding-top: 0;
+        font-size: 1.6rem;
+    }
+    li img{
+        padding-top: 1rem;
+        padding-left: 1rem;
+        margin-left: 0;
+    }
+}
+
