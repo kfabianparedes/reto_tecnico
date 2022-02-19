@@ -1,0 +1,18 @@
+.contorno{
+    background: #662323;
+    height: 100vh;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    color: #E86060;
+    background: #662323;
+    border: none;
+}
+.texto-login:hover{
+    font-size: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}

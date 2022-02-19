@@ -1,0 +1,9 @@
+.contorno{
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background: white;
+}
+.contorno-btn {
+    border-left: none;
+}

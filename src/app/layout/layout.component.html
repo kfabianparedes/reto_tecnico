@@ -4,25 +4,12 @@
             <app-sidebar class="row"></app-sidebar>
         </section>
         <section class="col-9">
-            <router-outlet ></router-outlet>
+            <div class="row container-fluid">
+                <app-nav></app-nav>
+            </div>
+            <div class="row container-fluid">
+                <router-outlet ></router-outlet>
+            </div>
         </section>
     </div>
 </div>
-
-    <!-- Content Wrapper -->
-    <!-- <div class="d-flex flex-column">
-
-        <div id="content">
-
-            <div class="container-fluid">
-
-                <router-outlet></router-outlet>
-
-            </div>
-
-        </div>
-
-        <app-reproductor></app-reproductor>
-
-    </div> -->
-    <!-- End of Content Wrapper -->

@@ -34,26 +34,25 @@ li img{
     font-family: 'Quicksand';
     font-style: normal;
     margin-top:0.5rem;
-    padding-left: 0.3rem;
-    
-    
+    padding-left: 2rem;
+
 }
+
 .barra{
-    width: 1rem;
-    height: 20px;   
-    display: block;       
-    width: 1rem;
+    margin-right: 1rem;
+    position: absolute;
+    width: 5px;
+    margin-top:0;
     height: 20px;
+    left: 0px;
+    color: #FFFFFF;
+    background: #662323;
+}
+.opciones-menu:hover {
     color: #E86060;
 }
-.barra:hover{
-    display: block;       
-    width: 1rem;
-    height: 20px;
-    color: #E86060;
-}
-.opciones-menu:hover{
-    color: #E86060;
+.opciones-menu:hover .barra{
+    background: #E86060;
 }
 @media screen and (max-width : 1360px){
     li .titulo-logo{
@@ -65,8 +64,10 @@ li img{
         
     }
     li img{
+        width: auto;
         padding-right: 0rem;
-        margin-left: 1rem;
+        padding-left: 0;
+        margin-left: 1.3rem;
     }
 }
 @media screen and (max-width : 768px){
