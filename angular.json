@@ -73,6 +73,10 @@
             },
             "development": {
               "browserTarget": "reto_tecnico:build:development"
+            },
+            "options": {
+              "browserTarget": "reto_tecnico:build",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

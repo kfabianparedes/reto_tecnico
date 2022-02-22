@@ -1,27 +1,17 @@
-# RetoTecnico
+# Instalando dependencias 
+    npm install
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
+# Ejecutar la app con cualquiera de los siguientes comandos: 
+    1.  npm start 
+    2.  ng serve --proxy-config src/proxy.conf.json 
+# Se está haciendo uso de un proxy porque Deezer API no me permite realizar solicitudes directamente (CORS error).
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# ###############################
+# FUNCIONALIDADES DESARROLLADAS
+    1. En la ruta 'home/mis-albumes' se lista todos los albumes que sigue el usuario.
+    2. Permite buscar o filtrar entre los albumes que sigue el usuario en la página de Deezer.
+    3. Al dar clic en un album se listará las lista de canciones del albúm seleccionado.
+    4. Permite filtrar o buscar entre todas las canciones del albúm anteriormente selecconado.
+    5. Al dar clic en cualquier botón play de alguna música, esta se empezará a reproducir
+    6. La barra de reproducción permite pausar la música y subir o bajar el volumen.
+# ###############################

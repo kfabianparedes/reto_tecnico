@@ -1,10 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { mergeMap } from 'rxjs';
 import { Track } from 'src/app/models/track.model';
 import { StorageService } from 'src/app/services/storage.service';
 import { TrackService } from 'src/app/services/track.service';
-import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
   selector: 'app-canciones',
@@ -120,19 +119,17 @@ export class CancionesComponent implements OnInit {
       this.audio.play();
   }
 
+  @ViewChild('audioPlayer') audioPlayer!: ElementRef;
 
+  audioEnded(): void {
+      console.log('ended!!')
+  }
   public reproducirAlbum($event:any){
     console.log($event);
     console.log(this.tracks)
 
-    this.tracks.forEach(
-      tema=>{
-        console.log(tema.duration);
-        setTimeout(()=>this.reproducirTrack(tema),tema.duration)
-      }
-    )
   }
-
+  
   ngOnDestroy(): void {
     console.log("Pausando musica"); // ngOnDestroy is not triggering
     this.audio.pause();

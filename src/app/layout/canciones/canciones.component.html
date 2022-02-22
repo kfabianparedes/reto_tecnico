@@ -12,7 +12,9 @@
             <cancion (OnReproducir)="reproducirTrack($event)" [imagenTrack]="track.album?.cover!" [mostrar]="mostrar" [track]="trackItem" class="mt-3" *ngFor="let trackItem of tracks | filterTrack:busqueda"></cancion>
         </div>
     </div>
-    
+    <audio style="background: black;" (ended)="audioEnded()" preload="auto" #audioPlayer>
+        <source [src]="trackReproduciendo.preview" type="audio/mp3">
+    </audio>
 </div>
 
 <reproductor *ngIf="mostrarReproductor" (OnPause)="playTrack($event)" (OnVolumen)="volumenTrack($event)" [play]="play" [track]="trackReproduciendo"> </reproductor>
