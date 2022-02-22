@@ -1,0 +1,58 @@
+.contenedor{
+    background-color: #EB5757;
+    font-size: x-large;
+    height: 100px;
+    width: 100%;
+    left: 0px;
+    bottom: 0;
+    border-radius: 0px;
+    position:fixed;
+}
+.info-track{
+    margin-left: 150px;
+    margin-top: 1rem;
+    top:  0;
+    position: absolute !important;
+    color: white;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 800;
+}
+.botones{
+    cursor: pointer;
+    margin-top: 2rem;
+    top:  0;
+    justify-content: space-between;
+    font-size: 3rem;
+    position: absolute !important;
+    color: white;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 800;
+}
+.volumen{
+    margin-top: 2.5rem;
+    margin-right: 6rem;
+    top:  0;
+    right: 0;
+    position: absolute !important;
+    color: white;
+    font-family: Quicksand;
+    font-style: normal;
+}
+.fa-volume-off{
+    margin-top: 0.1rem;
+}
+input[type='range']::-webkit-slider-runnable-track{
+    background: #FFFF;
+}
+input[type='range']::-webkit-slider-thumb{
+    background: #FFFF;
+}
+.img-reproduccion{
+    height: 100px;
+    width: 100px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+}

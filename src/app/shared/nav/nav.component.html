@@ -1,11 +1,11 @@
-<div class="row mt-5">
+<div class="navigation row mt-5">
     <div class="col-7 mb-3">
         <div class="input-group buscador">
-            <input type="text" class="form-control contorno" placeholder="Buscar" aria-label="Ingresar busqueda" aria-describedby="btn-buscar">
-            <button class="btn btn-primary contorno contorno-btn" type="button" id="btn-buscar"><i class="text-secondary fa-solid fa-magnifying-glass"></i></button>
+            <input (keyup.enter)="buscarAlbumPorNombre()" [(ngModel)]="buscador" type="text" class="form-control contorno" placeholder="Buscar" aria-label="Ingresar busqueda" aria-describedby="btn-buscar">
+            <button (click)="buscarAlbumPorNombre()" class="btn btn-primary contorno contorno-btn" type="button" id="btn-buscar"><i class="text-secondary fa-solid fa-magnifying-glass"></i></button>
         </div>
     </div>
     <div class="offset-3 col-2 pt-1 text-end">
-        <span><i class="fa-solid fa-user text-danger"></i> <span class="p-3">{{usuario}}</span></span>
+        <span><i class="fa-solid fa-user text-danger"></i> <span class="p-3">{{usuario | shortName}}</span></span>
     </div>
 </div>

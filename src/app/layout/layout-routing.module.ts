@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { AlbumesComponent } from './albumes/albumes.component';
+import { CancionesComponent } from './canciones/canciones.component';
 import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
@@ -8,9 +9,12 @@ const routes: Routes = [
     path:'home',
     component:LayoutComponent,
     children:[
-      {path:'',component:HomeComponent},
+      {path:'mis-albumes',component:AlbumesComponent},
+      {path:'mis-albumes/:id',component:CancionesComponent},
+      
     ]
-  }
+  },
+
 ];
 
 @NgModule({

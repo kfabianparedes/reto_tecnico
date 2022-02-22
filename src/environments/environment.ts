@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url_frontend: 'http://localhost:4200/',
+  url_frontend: 'http://localhost:4200',
   url_backend: 'https://api.deezer.com/'
 };
 

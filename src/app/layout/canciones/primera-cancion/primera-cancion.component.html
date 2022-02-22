@@ -1,0 +1,20 @@
+<div *ngIf="mostrar" class="card mb-5 ">
+    <div class="row g-0 justify-content-center">
+        <div class="col-12 col-md-3 reproductor">
+            <i (click)="reproducirAlbum()" class="play-cancion fa-solid fa-play"></i>
+            <img src="{{primerTrack.album!.cover!}}" class="text-center img-primer-cancion" alt="...">
+        </div>
+        <div class="info-album col-12 col-md-9">
+            <div class="mt-4 card-body">
+                <p class="card-title">{{primerTrack.artist!.name!}} {{primerTrack.title}}</p>
+                <p class="card-subtitle">Lo mejor de {{primerTrack.artist!.name!}} <span class="nro-seguidores"> | Rank N°: {{primerTrack.rank}}</span></p>
+                <p class="card-text mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia eveniet mollitia atque, autem, recusandae consectetur eos pariatur ullam dolores a deserunt ducimus, dolorum tenetur impedit sunt facilis accusamus ipsum ut?.</p>
+                <div class="botones">
+                    <button (click)="reproducirAlbum()" class="btn-reproducir col-3 btn btn-danger">Reproducir</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <reproductor *ng</reproductor>If="mostrar" (OnPause)="playTrack($event)" (OnVolumen)="volumenTrack($event)" [play]="play" [track]="primerTrack"> </reproductor> -->

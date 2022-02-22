@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { AuthRoutingModule } from './auth-routing.module';
 import { AuthComponent } from './auth.component';
+import { Error404Component } from './error404/error404.component';
 
 
 @NgModule({
   declarations: [
-    AuthComponent
+    AuthComponent,
+    Error404Component
   ],
   imports: [
     CommonModule,

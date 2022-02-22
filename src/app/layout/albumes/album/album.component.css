@@ -1,0 +1,19 @@
+.reproductor{
+    display: inline-block;
+    position: relative;
+}
+.play-album{
+    opacity: 0.5;
+    bottom:0;
+    left:0;
+    color: #FFFFFF;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 63px;
+    height: 72px;
+}
+.play-album:hover{
+    opacity: 1;
+}

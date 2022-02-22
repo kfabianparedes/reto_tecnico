@@ -1,0 +1,15 @@
+<div class="row">
+    <buscar-album (OnBusquedaAlbumPorNombre)="busquedaAlbumPorNombre($event)" [usuario]="usuario"></buscar-album>
+</div>
+<div *ngIf="mostrar" class="m-3 container-fluid mt-5 justify-content-center">
+    <div class=" bg-primary">
+        <primer-album [seguidores]="seguidoresPrimerAlbum" [primerAlbum]="album"></primer-album>
+    </div>
+    
+    <div class="row container-albums justify-content-center mt-4">
+        <p class="h4">Resultados</p>
+        <div class="row row-cols-1 row-cols-md-5">
+            <album (escuchar)="reproducirAlbum($event,item.id!)" [rutaFotoAlbum]="item.cover!" [tituloAlbum]="item.title!" [artistaAlbum]="item.artist!.name!" class="mt-3" *ngFor="let item of albums | filterAlbum:busqueda "></album>
+        </div>
+    </div>
+</div>

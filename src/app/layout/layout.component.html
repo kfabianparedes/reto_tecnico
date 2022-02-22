@@ -1,15 +1,13 @@
 <div class="container-fluid">
     <div class="row">
-        <section class="col-3">
-            <app-sidebar class="row"></app-sidebar>
+        <section class="col-2">
+            <app-sidebar class="sidebar row"></app-sidebar>
         </section>
-        <section class="col-9">
-            <div class="row container-fluid">
-                <app-nav></app-nav>
-            </div>
-            <div class="row container-fluid">
-                <router-outlet ></router-outlet>
+        <section class="navigation col-9">
+            <div class="contenido row container-fluid">
+                <router-outlet></router-outlet>
             </div>
         </section>
     </div>
 </div>
+

@@ -6,6 +6,7 @@ import { LayoutRoutingModule } from './layout/layout-routing.module';
 const routes: Routes = [
   {path:'',redirectTo:'',pathMatch:'full'},
   {path:'**',redirectTo:'/not-found'},
+  
 ];
 
 @NgModule({

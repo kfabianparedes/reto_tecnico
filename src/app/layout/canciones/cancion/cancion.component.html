@@ -1,0 +1,12 @@
+<div class="contenedor-fluid row justify-content-between">
+    <div class="col-2">
+        <img src="{{imagenTrack}}" class="img-reproduccion text-center img-primer-album" alt="...">
+    </div>
+    <div class="col-2 info-track">
+        <p class="h5"><strong>{{track.title}}</strong></p>
+        <p class="h5">{{track.artist!.name!}} - {{track.album?.title}}</p>
+    </div>
+    <div class="offset-2 col-2 mt-4 botones">
+        <i (click)="reproducir()" class="fa-solid fa-circle-play"></i>
+    </div>
+</div>

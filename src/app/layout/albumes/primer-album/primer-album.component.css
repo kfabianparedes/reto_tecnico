@@ -1,0 +1,90 @@
+.reproductor{
+    display: inline-block;
+    position: relative;
+}
+.img-primer-album{
+    left: 0%;
+    right: 71.91%;
+    top: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.play-album{
+    cursor: pointer;
+    bottom:0;
+    left:0;
+    color: #FFFFFF;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 63px;
+    height: 72px;
+}
+.card-body{
+    margin-left: 2rem;
+}
+.card-title{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.card-text{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    
+}
+.card-footer{
+    border:none;
+}
+.botones{
+    margin-top: 3rem;
+}
+.btn-reproducir{
+    font-weight: bolder;
+    color: #FFFFFF;
+    background-color: #d12727;
+    border: none;
+    opacity: 1;
+    border-radius: 3rem;
+    border-color: #FFFFFF;
+}
+.btn-reproducir:hover{
+    background: #d12727;
+}
+.btn-seguir{
+    color: #d12727;
+    font-weight: bolder;
+    margin-left: 1rem;
+    border: 10rem solid#d12727;
+    opacity: 0.35;
+    color: #E86060;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 3rem;
+
+}
+.info-album{
+    color: #FFFFFF;
+    background: #A70000B2 70%;
+    opacity: 0.7;
+    background: linear-gradient(0deg, rgba(167, 0, 0, 0.7), rgba(167, 0, 0, 0.7));
+    mix-blend-mode: normal;
+}
+
+.nro-seguidores{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: #662323 ;
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  usuario: string = '';
+  @Input() usuario: string = '';
+  @Output('OnBusquedaAlbumPorNombre') busquedaAlbumes = new EventEmitter<string>();
+  public buscador: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
-    this.usuario = 'Francisco M.';
   }
 
+  public buscarAlbumPorNombre(): void{
+    console.log(this.buscador);
+    this.busquedaAlbumes.emit(this.buscador);
+  }
 }

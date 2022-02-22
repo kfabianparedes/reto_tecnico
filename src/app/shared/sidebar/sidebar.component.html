@@ -1,26 +1,24 @@
 <div class="contorno">
-    <li class="row mt-5">
-        <img class="col-12 col-lg-4 " src="../../../assets/img/foxbel-music-icon.png" alt="logo-foxbel-music">
-        <p class="titulo-logo col-12 col-lg-7 ">Foxbel Music</p>
+    <li class="row justify-content-center mt-5">
+        <img class="img-thumbnail col-10" height="100" src="../../../assets/img/foxbel-music-icon.png" alt="logo-foxbel-music">
     </li>
-
     <li>
         <p class="subtitulo-sidebar h5">Mi Librería</p>
     </li>
 
-    <li class="opciones-menu row">
+    <li class="opciones-menu row" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
         <span><hr class="barra">Recientes</span>
     </li>
-    <li class="opciones-menu row">
+    <li class="opciones-menu row" >
         <span><hr class="barra">Artistas</span>
     </li>
-    <li class="opciones-menu row">
+    <li class="opciones-menu row" routerLink="mis-albumes" routerLinkActive="active">
         <span><hr class="barra">Álbums</span>
     </li>
-    <li class="opciones-menu row">
+    <li class="opciones-menu row" >
         <span><hr class="barra">Canciones</span>
     </li>
-    <li class="opciones-menu row">
+    <li class="opciones-menu row" >
         <span><hr class="barra">Estaciones</span>
     </li>
 

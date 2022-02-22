@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ReproductorComponent } from './reproductor/reproductor.component';
 import { NavComponent } from './nav/nav.component';
+import { PipesModule } from '../pipes/pipes.module';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -13,7 +16,10 @@ import { NavComponent } from './nav/nav.component';
     NavComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PipesModule,
+    FormsModule,
+    AppRoutingModule
   ],
   exports:[
     SidebarComponent,
